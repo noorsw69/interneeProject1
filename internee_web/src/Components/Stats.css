@@ -1,37 +1,79 @@
 .stats {
-    background-color: #1a1a1a;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 20px;
-    flex: 1;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.stats-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.stats-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #00c4cc; /* Teal border */
+  transition: box-shadow 0.3s;
+}
+
+.stats-image:hover {
+  box-shadow: 0 0 20px rgba(0, 196, 204, 0.7); /* Teal glow on hover */
+}
+
+.stats-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.watch-video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 2px solid #00ff00; /* Green border */
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+.stats-container:hover .watch-video-btn {
+  opacity: 1;
+  background: #00ff00; /* Green background on hover */
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Green glow */
+  color: black; /* Black text for contrast */
+}
+
+.play-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    width: 250px;
+    height: 250px;
   }
-  
-  .stats-image {
-    max-width: 100%;
-  }
-  
-  .stats-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
+
   .watch-video-btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-color: white;
-    color: black;
-    border: none;
     padding: 10px 20px;
-    border-radius: 50px;
-    cursor: pointer;
+    font-size: 14px;
+    opacity: 1;
+    background: #00ff00;
+    color: black;
   }
-  
-  .play-icon {
-    background-color: #2ecc71;
-    padding: 5px 10px;
-    border-radius: 50%;
-  }
+}

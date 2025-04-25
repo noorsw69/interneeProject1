@@ -1,70 +1,102 @@
 .hero {
   flex: 1;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start; /* Align content to the top */
-  color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-text {
-  max-width: 500px;
+ 파max-width: 600px;
+  text-align: center;
 }
 
 .hero-text h1 {
-  font-size: 56px;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 52px;
+  font-weight: 800;
   margin-bottom: 20px;
   line-height: 1.2;
+  color: white;
+  position: relative;
+}
+
+.hero-text h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #00c4cc, #66e0e5); /* Teal gradient underline */
+  border-radius: 2px;
 }
 
 .hero-text p {
-  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
   font-weight: 400;
-  margin-bottom: 40px;
-  line-height: 1.5;
-  color: #cccccc;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #b0b0b0;
 }
 
 .hero-buttons {
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
 
 .job-portal-btn,
 .sign-in-btn {
+  font-family: 'Montserrat', sans-serif;
   padding: 12px 24px;
-  border: none;
-  border-radius: 50px;
+  border: 2px solid #00ff00; /* Green border */
+  border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
+  background: transparent;
+  color: white;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
-.job-portal-btn {
-  background-color: #00ff00;
-  color: black;
+.job-portal-btn:hover,
+.sign-in-btn:hover {
+  background: #00ff00; /* Green background on hover */
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Green glow on hover */
 }
 
 .sign-in-btn {
-  background-color: #2c3e50;
+  background: #00ff00; /* Green background by default */
+  color: black; /* Black text for contrast */
+}
+
+.sign-in-btn:hover {
+  background: transparent;
   color: white;
 }
 
 @media (max-width: 768px) {
   .hero {
     justify-content: center;
-    align-items: center; /* Revert to centering on mobile for better balance */
+    align-items: center;
   }
 
   .hero-text {
-    text-align: center;
+    margin: 0 15px;
   }
 
   .hero-text h1 {
     font-size: 36px;
   }
 
+  .hero-text h1::after {
+    width: 80px;
+    height: 3px;
+  }
+
   .hero-text p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
