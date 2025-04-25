@@ -1,0 +1,36 @@
+.home-container {
+    background-color: #1a1a1a;
+    padding: 0;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .home-container > * {
+    margin: 0;
+  }
+  
+  .hero-stats-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #1a1a1a; /* Match the dark theme */
+    border-radius: 15px; /* Consistent with other sections */
+  }
+  
+  @media (max-width: 768px) {
+    .home-container {
+      gap: 20px;
+    }
+  
+    .hero-stats-container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  }

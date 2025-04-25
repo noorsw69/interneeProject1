@@ -1,0 +1,144 @@
+.community-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .community-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .tag {
+    background-color: #2a2a2a;
+    color: #cccccc;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    align-self: flex-start;
+  }
+  
+  .community-content h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  
+  .join-btn {
+    background-color: #00ff00;
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+  }
+  
+  .join-btn:hover {
+    background-color: #00cc00;
+  }
+  
+  .testimonial {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .testimonial-card {
+    background-color: #ffffff; /* Changed to white */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .avatar-placeholder {
+    width: 50px;
+    height: 50px;
+    background-color: #e0e0e0; /* Lighter shade for white background */
+    border-radius: 50%;
+  }
+  
+  .user-details h4 {
+    color: #1a1a1a; /* Darker color for readability on white */
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .user-details p {
+    color: #666666; /* Darker gray for readability on white */
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .quote {
+    color: #666666; /* Darker gray for readability on white */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-style: italic;
+    margin: 0;
+  }
+  
+  .rating {
+    color: #FFD700; /* Gold color for stars */
+    font-size: 16px;
+  }
+  
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #3a3a3a;
+    border-radius: 50%;
+  }
+  
+  .dot.active {
+    background-color: #00ff00;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .community-section {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .community-content,
+    .testimonial {
+      width: 100%;
+    }
+  
+    .join-btn {
+      align-self: stretch;
+      justify-content: center;
+    }
+  }

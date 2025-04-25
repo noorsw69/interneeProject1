@@ -1,0 +1,29 @@
+/* index.css or App.css */
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #cccccc;
+  --accent-color: #00ff00;
+}
+
+.light-theme {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --accent-color: #007bff;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+}
+
+.App {
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  min-height: 80vh; /* Ensure it takes up enough vertical space */
+}

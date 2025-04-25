@@ -1,0 +1,26 @@
+.partners {
+    background: linear-gradient(to right, #1a1a1a, #2c3e50); /* Subtle gradient to match the original */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .partners h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  
+  .partners-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Space between logos */
+    flex-wrap: wrap; /* Allow logos to wrap on smaller screens */
+  }
+  
+  .partner-logo {
+    height: 60px; /* Adjust based on the original design */
+    width: auto;
+    object-fit: contain;
+  }

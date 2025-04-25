@@ -1,0 +1,149 @@
+.internship-process-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px;
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 40px; /* Added spacing below the section */
+}
+
+.internship-process-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.how-it-works {
+  color: #cccccc;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.how-it-works:hover {
+  color: #00ff00;
+}
+
+.internship-process-content h2 {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.get-started-btn {
+  background-color: #00ff00;
+  color: #1a1a1a;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+}
+
+.get-started-btn:hover {
+  background-color: #00cc00;
+}
+
+.steps {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+/* Vertical line connecting the steps */
+.steps::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #00ff00 50%, #3a3a3a 50%);
+  z-index: 0;
+}
+
+.step {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+  z-index: 1;
+}
+
+.step-number {
+  background-color: #00ff00;
+  color: #1a1a1a;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  align-self: flex-start;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.step h4 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 100px;
+  margin: 0;
+}
+
+.step p {
+  color: #cccccc;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-left: 100px;
+  margin: 0;
+}
+
+/* Ensure no override by increasing specificity if needed */
+.internship-process-section .step {
+  gap: 4px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .internship-process-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .internship-process-content,
+  .steps {
+    width: 100%;
+  }
+
+  .get-started-btn {
+    align-self: stretch;
+    justify-content: center;
+  }
+
+  .steps::before {
+    left: 20px;
+  }
+
+  .step h4,
+  .step p {
+    margin-left: 80px;
+  }
+}

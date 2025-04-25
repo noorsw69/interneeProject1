@@ -1,0 +1,105 @@
+.learning-journey-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    background-color: #1a1a1a; /* Dark background to match the image */
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .learning-journey {
+    flex: 1;
+    background-color: #2a2a2a; /* Slightly lighter dark background */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .learning-journey h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .phase {
+    margin-bottom: 20px;
+  }
+  
+  .phase p {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .progress-bar {
+    background-color: #3a3a3a;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background-color: #00ff00; /* Green progress bar to match the image */
+    height: 100%;
+    transition: width 0.3s ease;
+  }
+  
+  .career-resources {
+    flex: 1;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .career-resources h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .resource-btn {
+    background-color: #3a3a3a;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .resource-btn .icon {
+    color: #00ff00; /* Green icons to match the image */
+    font-size: 20px;
+  }
+  
+  .resource-btn:hover {
+    background-color: #4a4a4a;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .learning-journey-section {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .learning-journey,
+    .career-resources {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,127 @@
+.student-ambassador-page {
+    background-color: #1a1a1a;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .student-ambassador-hero {
+    background-color: #1a1a1a;
+    height: 200px; /* Reduced height */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px; /* Reduced padding */
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 20px auto 0; /* Reduced margin */
+  }
+  
+  .student-ambassador-hero h1 {
+    color: white;
+    font-size: 36px; /* Reduced font size to fit smaller section */
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .benefits-section,
+  .responsibilities-section,
+  .apply-section {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #cccccc;
+  }
+  
+  .benefits-section h2,
+  .responsibilities-section h2,
+  .apply-section h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 20px;
+  }
+  
+  .benefits-section ul,
+  .responsibilities-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .benefits-section li,
+  .responsibilities-section li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .benefits-section li:before,
+  .responsibilities-section li:before {
+    content: '✔';
+    color: #00ff00;
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+  }
+  
+  .apply-section {
+    text-align: center;
+  }
+  
+  .apply-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 20px;
+  }
+  
+  .apply-section .apply-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    background-color: #00ff00;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .apply-section .apply-btn:hover {
+    background-color: #00cc00;
+  }
+  
+  @media (max-width: 768px) {
+    .student-ambassador-hero {
+      height: 150px; /* Reduced height for mobile */
+      padding: 15px; /* Reduced padding for mobile */
+      margin: 10px auto 0; /* Reduced margin for mobile */
+    }
+  
+    .student-ambassador-hero h1 {
+      font-size: 28px; /* Reduced font size for mobile */
+    }
+  
+    .benefits-section,
+    .responsibilities-section,
+    .apply-section {
+      padding: 20px;
+    }
+  
+    .benefits-section h2,
+    .responsibilities-section h2,
+    .apply-section h2 {
+      font-size: 24px;
+    }
+  
+    .benefits-section li,
+    .responsibilities-section li,
+    .apply-section p {
+      font-size: 14px;
+    }
+  }
